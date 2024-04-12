@@ -1,0 +1,3 @@
+<svg width="100%" height="100%" (mousedown)="startDrag($event)"  >
+    <line [attr.x1]="flecha.inicioX" [attr.y1]="flecha.inicioY" [attr.x2]="flecha.finX" [attr.y2]="flecha.finY" stroke="black" [attr.stroke-width]="lineStrong"/>
+</svg>

@@ -1,0 +1,58 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+  }
+
+.options {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(136, 255, 0);
+    position: absolute;
+    top: 21px;
+    left: 84px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+    transition: all 400ms ease;
+    border-radius: 10px;
+    background-image: url('../../assets/img/arrow.svg');
+}
+
+.square:hover {
+    .options {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(50%);
+        transition: all 400ms ease;
+    }
+    .menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(50%);
+        transition: all 400ms ease;
+    }
+}
+
+.menu {
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 2px;
+    position: absolute;
+    background-image: url('../../assets/img/menu.svg');   
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms ease;
+}
+
+.flecha {
+    position: absolute;
+}
